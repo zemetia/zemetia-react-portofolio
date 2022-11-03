@@ -60,7 +60,7 @@ const About = () => {
                         </p>
                     </Fade>
                     
-                    <CTA />
+                    <CTA cv="https://download.zemetia.my.id/cv/Yoel's%20Resume%20Creative%20-%202.pdf"/>
                 </div>
             </div>
         </section>
