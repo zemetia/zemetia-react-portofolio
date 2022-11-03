@@ -18,7 +18,7 @@ const App = () => {
       }
 
       window.addEventListener('scroll', updateLoc)
-      updateLoc();
+      updateLoc()
       
       return () => window.removeEventListener('scroll', updateLoc)
   }, [])
@@ -36,6 +36,8 @@ const App = () => {
     navA[3].style.color = loc < 560? "": "var(--color-primary)"
     navA[4].style.color = loc < 560? "": "var(--color-primary)"
     navA[5].style.color = loc < 560? "": "var(--color-primary)"
+
+    
   }) 
 
   return (
@@ -52,61 +54,5 @@ const App = () => {
     </div>
   )
 }
-
-/*
-class App extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        foo: "bar",
-        resumeData: {}
-      };
-  
-      ReactGA.initialize("UA-110570651-1");
-      ReactGA.pageview(window.location.pathname);
-    }
-  
-    getResumeData() {
-      $.ajax({
-        url: "./resumeData.json",
-        dataType: "json",
-        cache: false,
-        success: function(data) {
-          this.setState({ resumeData: data });
-        }.bind(this),
-        error: function(xhr, status, err) {
-          console.log(err);
-          alert(err);
-        }
-      });
-    }
-  
-    componentDidMount() {
-      this.getResumeData();
-    }
-  
-    render() {
-        return (
-            <div>
-                <Canvas>
-                  <OrbitControls />
-                  <ambientLight intensity={0.4} />
-                  <spotLight position={[10, 15, 10]} angle={0.3} />
-                  <Box />
-                </Canvas>
-                <Header />
-                <Nav />
-                <About />
-                <Experience />
-                <Services />
-                <Portofolio />
-                <Skills />
-                <Testimonial />
-                <Contact />
-                <Footer />
-            </div>
-        )
-    }
-} */
   
 export default App;
