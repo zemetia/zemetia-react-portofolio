@@ -1,0 +1,40 @@
+.footer {
+    background: var(--color-bg-variant);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 10px;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--color-light);
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.8rem;
+    text-align: center;
+    overflow: scroll;
+}
+
+.footer__nav a {
+    border-bottom: 1px solid transparent;
+}
+
+.footer__nav a:hover {
+    border-color: var(--color-light);
+}
+
+@media screen and (max-width: 500px) {
+    .footer__nav {
+        grid-template-columns: repeat(3, 1fr);
+    }  
+}
