@@ -5,6 +5,7 @@ import CTA from './CTA'
 import { FaAward } from 'react-icons/fa'
 import { Fade, Slide } from 'react-awesome-reveal'
 import { CgWebsite } from 'react-icons/cg'
+import { AiFillBook } from 'react-icons/ai'
 
 const About = () => {
     const data = {
@@ -46,7 +47,7 @@ const About = () => {
                                 <small>1</small>
                             </article>
                             <article className="about__card">
-                                <FaAward className='about__icon' />
+                                <AiFillBook className='about__icon' />
                                 <h5>Major</h5>
                                 <small>Informatics</small>
                             </article>

@@ -14,7 +14,7 @@ import LinkedinText3d from '../../assets/3dObject/openLinkedin.obj'
 import InstagramText3d from '../../assets/3dObject/openInstagram.obj'
 import GithubText3d from '../../assets/3dObject/myProjects.obj'
 import Next3d from '../../assets/3dObject/next.obj'
-import NextText3d from '../../assets/3dObject/gotoaboutme.obj'
+// import NextText3d from '../../assets/3dObject/gotoaboutme.obj'
 
 function random(from, to){
     return Math.random() * (to - from) + from
@@ -136,7 +136,7 @@ const Header = () => {
                     textPosition={[-10.8, 3.4, 0]}
                     scale={0.18} 
                     src={Instagram3d} 
-                    link="https://instagram.com/za_zymer" 
+                    link="https://instagram.com/zemetia" 
                     position={[3,-5.35, 0]} 
                 />
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.css'
+import Miku from '../../assets/image/miku.png'
 
 const Contact = () => {
     return (
@@ -10,7 +11,10 @@ const Contact = () => {
             </div>
 
             <div className="container container__contact">
-                <div className="contact__information"></div>
+                <div className="contact__information">
+                    <img src={Miku} alt="Miku Sayang"></img>
+                    <span>Contact me</span>
+                </div>
                 <div className="contact__form">
                     <form method="get" target="">
                         <input type='text' id="name" placeholder='Enter Your Name'></input>
